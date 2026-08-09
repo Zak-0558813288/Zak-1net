@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAK 1NET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">ZAK 1NET</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">My Gallery</a></li>
+            <li><a href="#documents">My Documents</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Welcome to Zak 1net</h1>
+
+            <p>
+                Welcome to my personal website where you can
+                explore my pictures and reference documents.
+            </p>
+
+            <a href="#gallery" class="button">My Gallery</a>
+            <a href="#documents" class="button">My Documents</a>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+        <h2>My Gallery</h2>
+        <p>Click on any picture to view it.</p>
+
+        <div class="gallery">
+            <img src="ZAK.jpg"
+                 alt="My Picture 1"
+                 onclick="openImage(this.src)">
+
+            <img src="ZAK1.jpg"
+                 alt="My Picture 2"
+                 onclick="openImage(this.src)">
+
+            <img src="ZAK2.jpg"
+                 alt="My Picture 3"
+                 onclick="openImage(this.src)">
+            <img src="ZAK3.jpg"
+                 alt="My Picture 4"
+                 onclick="openImage(this.src)">
+            <img src="ZAK4.jpg"
+                 alt="My Picture 5"
+                 onclick="openImage(this.src)">
+            <img src="ZAK5.jpg"
+                 alt="My Picture 6"
+                 onclick="openImage(this.src)">
+        </div>
+    </section>
+
+    <!-- IMAGE FULLSCREEN -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="fullImage" class="full-image">
+    </div>
+
+    <!-- DOCUMENTS -->
+    <section id="documents" class="section documents">
+        <h2>My Documents</h2>
+        <p>Click on a document to open and read it.</p>
+
+        <div class="document-list">
+
+            <div class="document-card"
+                 onclick="openDocument('OPERATING SYSTEMS  NOTES.pdf')">
+                <h3>OPERATING SYSTEMS  NOTES</h3>
+                <p>Click to open document</p>
+            </div>
+
+            <div class="document-card"
+                 onclick="openDocument('DATA BASE MANAGEMENT SYSTEM.pptx')">
+                <h3>DATA BASE MANAGEMENT SYSTEM</h3>
+                <p>Click to open document</p>
+            </div>
+
+            <div class="document-card"
+                 onclick="openDocument('Intro to Multimedia.pptx')">
+                <h3>Intro to Multimedia</h3>
+                <p>Click to open document</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DOCUMENT FULLSCREEN -->
+    <div id="documentModal" class="modal">
+        <span class="close" onclick="closeDocument()">&times;</span>
+        <iframe id="documentViewer"></iframe>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 My Personal Website</p>
+
+        <p>
+            <a href="https://wa.me/233558813288" class="whatsapp-button" target="-blank">
+            chat with me on whatsapp</a><br>
+            Email:
+            <a href="mailto:fuseinizakaria1999@gmail.com">
+                fuseinizakaria1999@gmail
+            </a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
